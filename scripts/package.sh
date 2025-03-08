@@ -2,7 +2,7 @@
 
 set -e
 
-yarn install --immutable --network-timeout 100000  \
+yarn install --immutable \
 && yarn --cwd arduino-ide-extension build \
 && yarn --cwd electron-app rebuild \
 && yarn --cwd electron-app build \
